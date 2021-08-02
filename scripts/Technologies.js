@@ -1,0 +1,1 @@
+import { getTechnologies } from "./database.js"
