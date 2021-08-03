@@ -3,6 +3,8 @@
 
 const database = {
 
+    orderBuilder: {},
+
     paints: [
         {
             id: 1,
