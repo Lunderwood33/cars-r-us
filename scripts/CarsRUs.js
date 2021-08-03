@@ -1,10 +1,11 @@
-import { Interiors } from "./Interiors.js"
+import { CarInteriors } from "./Interiors.js"
 import { Paints } from "./Paints.js"
-import { Technologies } from "./Technologies.js"
-import { Wheels } from "./Wheels.js"
+// import { Technologies } from "./Technologies.js"
+// import { Wheels } from "./Wheels.js"
 
 
-// remember to invoke fuctions
+
+
 
 export const CarsRUs = () => {
     return `
@@ -12,21 +13,21 @@ export const CarsRUs = () => {
 
         <article class="choices">
             <section class="choices__paints options">
-                <h2>Paints</h2>
-                // remember to invoke fuction
+                <h2>Paint</h2>
+                ${Paints()}
             </section>
             <section class="choices__interiors options">
-                <h2>Interiors</h2>
-                // remember to invoke fuction
-            </section>
+                <h2>Interior</h2>
+                ${CarInteriors()}
+                </section>
             <section class="choices__technologies options">
-                <h2>Tecnologies</h2>
-                // remember to invoke fuction
-            </section>
+                <h2>Technology</h2>
+                
+                </section>
             <section class="choices__wheels options">
                 <h2>Wheels</h2>
-                // remember to invoke fuction
-            </section>
+                
+                </section>
         </article>
 
         <article>
