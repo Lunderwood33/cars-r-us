@@ -64,23 +64,19 @@ const database = {
     wheels: [
         {
             id: 1,
-            size: 17,
-            type: "Pair Radial"
+            size: "17 Pair Radial"
         },
         {
             id: 2,
-            size: 17,
-            type: "Pair Radial Black"
+            size: "17 Pair Radial Black"
         },
         {
             id: 3,
-            size: 18,
-            type: "Pair Spoke Silver"
+            size: "18 Pair Spoke Silver"
         },
         {
             id: 4,
-            size: 18,
-            type: "Pair Spoke Black"
+            size: "18 Pair Spoke Black"
         }
     ]
 }

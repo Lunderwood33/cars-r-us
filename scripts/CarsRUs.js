@@ -1,7 +1,7 @@
 import { CarInteriors } from "./Interiors.js"
 import { Paints } from "./Paints.js"
-// import { Technologies } from "./Technologies.js"
-// import { Wheels } from "./Wheels.js"
+import { Technologies } from "./Technologies.js"
+import { Wheels } from "./Wheels.js"
 
 
 
@@ -22,11 +22,11 @@ export const CarsRUs = () => {
                 </section>
             <section class="choices__technologies options">
                 <h2>Technology</h2>
-                
+                ${Technologies()}
                 </section>
             <section class="choices__wheels options">
                 <h2>Wheels</h2>
-                
+                ${Wheels()}
                 </section>
         </article>
 
