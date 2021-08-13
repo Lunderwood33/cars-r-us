@@ -1,9 +1,42 @@
 import { getPaints, getOrders, getInteriors, getTechnologies, getWheels } from "./database.js"
 
+const paints = getPaints()
+const interiors = getInteriors()
+const technologies = getTechnologies()
+const wheels = getWheels()
+
 
 const buildOrderListItem = (order) => {
+    
+    const foundPaint = paints.find(
+        (paint) => {
+            return paint.id === order.paintId
+        }
+    )
+    const foundInterior = interiors.find(
+        (interior) => {
+            return interior.id === order.interiorId
+        }
+    )
+    const foundTechnology = technologies.find(
+        (technology) => {
+            return technology.id === order.technologyId
+        }
+    )
+    const foundWheel = wheels.find(
+        (wheel) => {
+            return wheel.id === order.wheelId
+        }
+    )
+    const totalCost = foundPaint.price + foundInterior.price + foundTechnology.price + foundWheel.price
+    
+    const costString = totalCost.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+    })
+    
     return `<li>
-    Order #${order.id} cost ${order.timestamp}
+    Order #${order.id} cost ${costString}
 </li>`
 }
 
